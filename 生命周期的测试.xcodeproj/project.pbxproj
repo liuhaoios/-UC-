@@ -15,6 +15,7 @@
 		2011373D1D0006CE00523B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2011373B1D0006CE00523B12 /* LaunchScreen.storyboard */; };
 		201137481D0006CE00523B12 /* _______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 201137471D0006CE00523B12 /* _______Tests.m */; };
 		201137531D0006CE00523B12 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 201137521D0006CE00523B12 /* _______UITests.m */; };
+		201137A41D00253500523B12 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 201137A31D00253500523B12 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2011374E1D0006CE00523B12 /* 生命周期的测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "生命周期的测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		201137521D0006CE00523B12 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
 		201137541D0006CE00523B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201137A21D00253500523B12 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		201137A31D00253500523B12 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				201137301D0006CE00523B12 /* AppDelegate.h */,
 				201137311D0006CE00523B12 /* AppDelegate.m */,
 				201137331D0006CE00523B12 /* ViewController.h */,
+				201137A21D00253500523B12 /* UIView+Frame.h */,
+				201137A31D00253500523B12 /* UIView+Frame.m */,
 				201137341D0006CE00523B12 /* ViewController.m */,
 				201137361D0006CE00523B12 /* Main.storyboard */,
 				201137391D0006CE00523B12 /* Assets.xcassets */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					201137291D0006CE00523B12 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TCVM59AQSU;
 					};
 					201137421D0006CE00523B12 = {
 						CreatedOnToolsVersion = 7.2;
@@ -270,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201137A41D00253500523B12 /* UIView+Frame.m in Sources */,
 				201137351D0006CE00523B12 /* ViewController.m in Sources */,
 				201137321D0006CE00523B12 /* AppDelegate.m in Sources */,
 				2011372F1D0006CE00523B12 /* main.m in Sources */,
@@ -413,9 +420,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "生命周期的测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cheyipai.-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheyipai.kk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -424,9 +433,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "生命周期的测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cheyipai.-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheyipai.kk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -498,6 +509,7 @@
 				201137591D0006CE00523B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2011375A1D0006CE00523B12 /* Build configuration list for PBXNativeTarget "生命周期的测试Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +518,7 @@
 				2011375C1D0006CE00523B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2011375D1D0006CE00523B12 /* Build configuration list for PBXNativeTarget "生命周期的测试UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +527,7 @@
 				2011375F1D0006CE00523B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
